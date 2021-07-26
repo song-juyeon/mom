@@ -21,7 +21,7 @@ public class SplashActivity extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
-        },1700);
+        },2200);
     }
     @Override
     protected void onPause() {
