@@ -1,5 +1,6 @@
 package kr.hs.emirim.w2034.mom;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -17,6 +18,10 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        //타이틀바 제거
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.hide();
 
         btn_nologin = findViewById(R.id.btn_nologin);
         btn_nologin.setOnClickListener(btnListener);

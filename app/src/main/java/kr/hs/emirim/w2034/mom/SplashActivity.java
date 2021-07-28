@@ -1,5 +1,6 @@
 package kr.hs.emirim.w2034.mom;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -12,6 +13,10 @@ public class SplashActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+
+        //타이틀바 제거
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.hide();
 
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {

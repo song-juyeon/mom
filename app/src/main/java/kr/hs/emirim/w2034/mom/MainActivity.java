@@ -13,6 +13,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //타이틀바 제거
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.hide();
         
         int[] images = {R.drawable.banner, R.drawable.banner2, R.drawable.banner3};
         v_fllipper = findViewById(R.id.image_slide);
